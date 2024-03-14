@@ -44,14 +44,14 @@ void notifiaction() {
   Serial.println(sensor);
   sensor = map(sensor, 0, 1024, 0, 100);
   if (pinValue == 1) {
-    if (sensor <= 40) {
+    if (sensor <= 50) {
       digitalWrite(Green, HIGH);
       digitalWrite(Red, LOW);
       digitalWrite(Buzzer, LOW);
       digitalWrite(Fan, HIGH);
       lcd.setCursor(0, 1);
       lcd.print("Gas value:Normal");
-    } else if (sensor > 40) {
+    } else if (sensor > 50) {
       Blynk.logEvent("high_co");
       digitalWrite(Green, LOW);
       digitalWrite(Red, HIGH);
