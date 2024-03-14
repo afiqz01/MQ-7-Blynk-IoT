@@ -1,0 +1,1 @@
+MQ7 is a gas sensor module used to detect carbon monoxide (CO) levels in the air. It utilizes a tin dioxide semiconductor sensor to measure CO concentration, often integrated with a heater for optimal performance. This module is commonly employed in gas leak detection systems and carbon monoxide alarms.
